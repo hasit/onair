@@ -15,10 +15,10 @@ let mainWindow;
 function createWindow () {
   //Browser window options
   const browserOptions = {
-    width: 500,
+    width: 300,
     height: 500,
     maximizeable: false,
-    // resizable: false,
+    resizable: false,
     frame: false,
     icon:'public/img/logo.png'
   }

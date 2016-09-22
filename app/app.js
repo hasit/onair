@@ -3,11 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Import components
-import Header from './components/header.component';
-import LivestreamList from './components/livestreamlist.component';
-
-// Import 
+import AppContainer from './containers/app.container'
 
 // Component Class
 class App extends React.Component {
@@ -15,10 +11,7 @@ class App extends React.Component {
     // render method returns JSX template
     render() {
         return (
-            <div>
-                <Header />
-                <LivestreamList />
-            </div>
+            <AppContainer />
         );
     }
 }

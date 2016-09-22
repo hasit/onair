@@ -4,7 +4,7 @@ class Header extends React.Component {
   render(){
     return(
       <div className="header">
-          <span className="heading">OnAir</span>
+          <span className="heading">OnAir ({this.props.count})</span>
           <span className="icons">
             <i className="fa fa-refresh" onClick={this.props.refreshFeed}></i>
             <i className='fa fa-cog' onClick={this.props.openSettings}></i>

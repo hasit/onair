@@ -8,6 +8,11 @@ body{
   font-family: 'Exo 2', sans-serif;
   -webkit-app-region: drag;
   -webkit-user-select: none;
+  background-color: rgb(241, 241, 241);
+}
+
+.onair {
+    position: relative;
 }
 
 /* Header */
@@ -22,10 +27,15 @@ body{
 .header span.heading {
     text-align: left;
     padding: 0.2em; 
+    font-weight: bolder;
 }
 
 .header span.icons {
     float: right;
+}
+
+.header span.icons .fa:hover {
+    color: rgb(37, 116, 169);
 }
 
 .header span.icons .fa {
@@ -38,6 +48,10 @@ body{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
+    /*color: white;*/
+}
+
+.stream-data:hover {
     background-color: rgb(37, 116, 169);
     color: white;
 }

@@ -3,7 +3,7 @@ import React from 'react';
 class Livestream extends React.Component {
     render(){
         return(
-            <a className="stream-link" href={this.props.embed_url}>
+            <a className="stream-link" href={this.props.embed_url} target="_blank">
                 <div className="stream-data">
                     <img className="stream-thumbnail" src={this.props.thumbnail_url}/>
                     <div className="stream-text">
