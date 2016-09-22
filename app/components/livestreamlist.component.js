@@ -29,8 +29,8 @@ class LivestreamList extends React.Component {
                 is_live: true
             }
         ];
-        var livestreamList = livestreams.map(function(livestream){
-            return <Livestream embed_url={livestream.embed_url} thumbnail_url={livestream.thumbnail_url} user__slug={livestream.user__slug} title={livestream.title} tags={livestream.tags} is_live={livestream.is_live} />
+        var livestreamList = livestreams.map(function(livestream, i){
+            return <Livestream key={i} embed_url={livestream.embed_url} thumbnail_url={livestream.thumbnail_url} user__slug={livestream.user__slug} title={livestream.title} tags={livestream.tags} is_live={livestream.is_live} />
         })
 
         return(

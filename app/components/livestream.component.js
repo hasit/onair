@@ -3,19 +3,18 @@ import React from 'react';
 class Livestream extends React.Component {
     render(){
         return(
-            <div className="livestream">
-                <a href={this.props.embed_url}>
-                    <div className="stream-image">
-                        <img src={this.props.thumbnail_url}/>
+            <a className="stream-link" href={this.props.embed_url}>
+                <div className="stream-data">
+                    <img className="stream-thumbnail" src={this.props.thumbnail_url}/>
+                    <div className="stream-text">
+                        <ul>
+                            <li><i className={this.props.is_live ? "fa fa-circle" : "fa fa-circle-thin" }></i> {this.props.user__slug}</li>
+                            <li>{this.props.title}</li>
+                            <li>{this.props.tags}</li>
+                        </ul>
                     </div>
-                    <div className="stream-data">
-                        <span className={this.props.is_live ? "fa fa-circle" : "fa fa-circle-thin" }></span>
-                        <span className="stream-user">{this.props.user__slug}</span>
-                        <span className="stream-title">{this.props.title}</span>
-                        <span className="stream-tags">{this.props.tags}</span>
-                    </div>
-                </a>
-            </div>
+                </div>
+            </a>
         )
     }
 }

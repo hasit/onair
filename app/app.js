@@ -15,7 +15,7 @@ class App extends React.Component {
     // render method returns JSX template
     render() {
         return (
-            <div className="app">
+            <div>
                 <Header />
                 <LivestreamList />
             </div>
