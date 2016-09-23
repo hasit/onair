@@ -3,12 +3,18 @@
   box-sizing: border-box;
 }
 
+/* Hide scrollbars but keep the scroll working */
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 /* Body resets and fancy font*/
 body{
-  font-family: 'Exo 2', sans-serif;
-  -webkit-app-region: drag;
-  -webkit-user-select: none;
-  background-color: rgb(241, 241, 241);
+    font-family: 'Exo 2', sans-serif;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: rgb(241, 241, 241);
 }
 
 .onair {
@@ -21,6 +27,7 @@ body{
     font-size: 2em;
     padding-bottom: 0.2em;
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
     color: rgb(23, 26, 30);
 }
 
@@ -28,6 +35,10 @@ body{
     text-align: left;
     padding: 0.2em; 
     font-weight: bolder;
+}
+
+.header span.heading:hover{
+    cursor: default;
 }
 
 .header span.icons {
@@ -48,16 +59,13 @@ body{
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
-    /*color: white;*/
+    color: rgb(37, 116, 169);
 }
 
 .stream-data:hover {
     background-color: rgb(37, 116, 169);
     color: white;
-}
-
-.stream-link {
-    text-decoration: none;
+    cursor: default;
 }
 
 .stream-text {
@@ -70,6 +78,7 @@ body{
 
 .stream-text ul {
     list-style-type: none;
+    padding-left: 0.2em;
 }
 
 .stream-thumbnail {

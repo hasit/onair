@@ -6,7 +6,7 @@ const app = electron.app;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 
-require('electron-reload')(__dirname + './public');
+require('electron-reload')(__dirname);
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -17,9 +17,9 @@ function createWindow () {
   const browserOptions = {
     width: 300,
     height: 500,
-    maximizeable: false,
+    fullscreenable: false,
     resizable: false,
-    frame: false,
+    // frame: false,
     icon:'public/img/logo.png'
   }
   // Create the browser window.

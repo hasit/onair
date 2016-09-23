@@ -13,5 +13,13 @@
     <div id="content"></div>
 
   <script src="public/js/bundle.js"></script>
+  <script>
+    // Disable zoom
+    document.addEventListener('mousewheel', function(e) {
+      if (e.ctrlKey) {
+        e.preventDefault();
+      }
+    });
+  </script>
   </body>
 </html>
